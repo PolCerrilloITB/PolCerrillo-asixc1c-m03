@@ -2,7 +2,7 @@
 Pol Cerrillo
 21/09/2023
 ASIXc1C M03 UF1
-Descripció: Exemple dels apuntsc
+Descripció: Exemple dels apunts
 """
 
 #Programa que demana l'edat i diu si ets major d'edat.
