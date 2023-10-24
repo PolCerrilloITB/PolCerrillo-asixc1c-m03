@@ -6,17 +6,11 @@ Descripció: Dies en un mes
 """
 
 mes = input("Quin mes vols?")
-match mes:
-    case"1": print("Te 31 dias el mes", mes)
-    case"2": print("Te 28 dias el mes", mes)
-    case"3": print("Te 31 dias el mes", mes)
-    case"4": print("Te 30 dias el mes", mes)
-    case"5": print("Te 31 dias el mes", mes)
-    case"6": print("Te 30 dias el mes", mes)
-    case"7": print("Te 31 dias el mes", mes)
-    case"8": print("Te 31 dias el mes", mes)
-    case"9": print("Te 30 dias el mes", mes)
-    case"10": print("Te 31 dias el mes", mes)
-    case"11": print("Te 30 dias el mes", mes)
-    case"12": print("Te 31 dias el mes", mes)
-    case _: print("Error")
+if mes == 1 or mes == 3 or mes == 5 or mes == 7 or mes == 8 or mes == 10 or mes 12:
+    print("Aquest mes te 31 dias")
+elif mes == 2:
+    print("Aquest mes te 28 o 29 dias")
+elif mes == 4 or mes == 6 or mes == 11:
+    print("Aquest mes te 30 dias")
+else:
+    print("Error")
