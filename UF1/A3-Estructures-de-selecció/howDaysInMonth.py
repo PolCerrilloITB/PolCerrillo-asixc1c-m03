@@ -19,3 +19,4 @@ match mes:
     case"10": print("Te 31 dias el mes", mes)
     case"11": print("Te 30 dias el mes", mes)
     case"12": print("Te 31 dias el mes", mes)
+    case _: print("Error")
