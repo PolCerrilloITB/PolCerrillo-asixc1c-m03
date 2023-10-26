@@ -5,7 +5,7 @@ ASIXc1C M03 UF1
 Descripció: Galetes == Persones?
 """
 
-persones, galetes = int(input())
+persones, galetes = (input().split(" "))
 if persones == galetes or galetes*2 == persones:
     print("Let's Eat!")
 else:
