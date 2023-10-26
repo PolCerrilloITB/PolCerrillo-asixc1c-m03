@@ -6,7 +6,9 @@ Descripció: Galetes == Persones?
 """
 
 persones, galetes = (input().split(" "))
-if persones == galetes or galetes*2 == persones:
+npersona = int(persones)
+ngaletes = int(galetes)
+if npersona % ngaletes == 0:
     print("Let's Eat!")
 else:
     print("Let's Fight")
