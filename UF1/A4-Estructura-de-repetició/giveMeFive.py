@@ -6,9 +6,9 @@ Descripció: Dona un numero fins que sigui 5
 """
 
 number=0
-
+PWD=1234
 while number!=5:
     number = int(input("Give me five:"))
-    if number ==1234 and number!=5:
+    if number == PWD and number!=5:
         number=5
 print("Great thank you")
