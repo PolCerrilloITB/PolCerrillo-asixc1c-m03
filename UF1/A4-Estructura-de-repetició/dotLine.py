@@ -8,7 +8,7 @@ Imprimeix per pantalla tantes línies amb tants punts com l'usuari hagi indicat
 """
 linies = int(input("Linies: "))
 punts = int(input("Punts: "))
-for i in range(linies):
-    for n in range(punts):
+for l in range(linies):
+    for p in range(punts):
         print(".", end="")
     print("")
