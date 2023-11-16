@@ -7,7 +7,13 @@ Descripció: Mostra per pantalla tots els números fins a un enter entrat per l'
 num = int(input("Numeró: "))
 if num > 0:
     for i in range(1, num + 1):
-        print(i)
+        if i < num:
+            print(str(i)+" ", end="")
+        else:
+            print(i, end="")
 if num < 1:
     for n in range(-1, num - 1, -1):
-        print(n)
+        if n < num:
+            print(str(n)+" ", end="")
+        else:
+            print(n, end="")
