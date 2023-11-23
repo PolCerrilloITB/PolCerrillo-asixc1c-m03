@@ -9,5 +9,5 @@ for i in range(1,10):
         if i*n <= 9:
             print("", i*n, end=" ")
         else:
-            print(i*n, end= " ")
+            print(i*n, end=" ")
     print(" ")
