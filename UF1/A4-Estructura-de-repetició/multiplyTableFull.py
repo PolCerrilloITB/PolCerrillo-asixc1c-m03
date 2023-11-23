@@ -6,5 +6,8 @@ Descripció: Volem mostrar per pantalla les taules de multiplicar.
 """
 for i in range(1,10):
     for n in range(1,10):
-        print(i*n, end= " ")
+        if i*n <= 9:
+            print("", i*n, end=" ")
+        else:
+            print(i*n, end= " ")
     print(" ")
