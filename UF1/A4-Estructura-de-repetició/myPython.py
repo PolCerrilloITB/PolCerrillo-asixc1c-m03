@@ -18,11 +18,12 @@ COS3 = "..╚═(███)═╝"
 COS4 = "...╚═(███)═╝"
 CUA =  " ═V═ "
 c = int(input())
-print(CAP)
-print(ULLS)
 if c < 5:
     print("Minim 5")
 else:
+    print(CAP)
+    print(ULLS)
     for i in range(c):
+   #    print(i*((COS), (COS2), (COS3), (COS4)))
         print(random.choice([(COS), (COS2), (COS3), (COS4)]))
     print(CUA)
