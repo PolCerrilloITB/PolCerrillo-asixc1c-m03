@@ -23,15 +23,17 @@ try:
     while cont <= 10 and sortir == "false":
         if num_escollit != n:
             print("El teu numero es aquest?", n)
-            pista = str(input("Gran o petit?"))
-            if pista == "+":
+            pista = input("Gran o petit?")
+            if pista == "-":
                 cont = cont + 1
                 maxNum = n
-                n = random.randint(num_escollit, minNum)
-            elif pista == "-":
+                n = random.randint(minNum, n)
+            elif pista == "+":
                 cont = cont + 1
                 minNum = n
-                n = random.randint(maxNum, num_escollit)
+                n = random.randint(n, maxNum)
+            else:
+                print("Error")
         else:
             sortir = "true"
     if sortir == "true" and cont <= 10:
