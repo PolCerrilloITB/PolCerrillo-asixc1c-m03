@@ -13,6 +13,7 @@ amb el tema escollit. Si l’usuari tria una opció no contemplada, el programa 
 En tot cas, el programa tornarà a mostrar el menú d’opcions, tret que l’usuari triï l’opció 5:
 en aquest cas, el programa mostrarà un missatge de comiat i acabarà.
 """
+#LLista d'opcions
 sortir = "false"
 print("Tria una d'aquestes opcions: ")
 print("1. Literatura")
@@ -20,6 +21,7 @@ print("2. Cinema")
 print("3. Música")
 print("4. Videojocs")
 print("5. Sortir")
+#Mentre l'opcio sortir no ho posi podra continuar escollint altres opcions
 while sortir == "false":
     opcio = int(input())
     if opcio == 1:
