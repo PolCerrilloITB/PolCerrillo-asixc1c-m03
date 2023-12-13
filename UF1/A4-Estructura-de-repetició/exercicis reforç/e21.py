@@ -11,6 +11,7 @@ El programa acaba quan encerta el número o si s'arriba al límit d'intents (10 
 En acabar cal mostrar si ha encertat o no, i la quantitat d’intents que s’han fet servir.
 """
 try:
+    #Variables i condicions
     cont = 1
     sortir = "false"
     import random
@@ -18,9 +19,13 @@ try:
     minNum = 0
     maxNum = 100
     n = random.randint(1, 100)
+    #While per fer la condicio dels numeros maxims i minims
     while num_escollit <= 0 or num_escollit > 100:
+        #Elecció del numero
         num_escollit = int(input())
+        #While del contador maxim i que mentre no l'encertin no surti del while
     while cont <= 10 and sortir == "false":
+        #Condicions per continuar decidint si es positiu o negatiu
         if num_escollit != n:
             print("El teu numero es aquest?", n)
             pista = input("Gran o petit?")
