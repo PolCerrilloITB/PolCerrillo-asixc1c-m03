@@ -14,6 +14,6 @@ try:
         factorial = 1
         for i in range(1, num+1):
             factorial *= i
-        print(num, "=", factorial)
+        print(num,"!", "=", factorial)
 except:
     print("Error")
