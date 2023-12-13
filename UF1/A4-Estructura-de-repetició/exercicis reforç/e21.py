@@ -40,7 +40,7 @@ try:
         num_escollit = n
         print("Encertat en", cont, "intents i el numero es", num_escollit)
     else:
-        print("Has arribat al numero maxim d'intetns. El numero es aquest", num_escollit )
+        print("Has arribat al numero maxim d'intetns. El numero es aquest", num_escollit)
 except:
     print("Error")
 
