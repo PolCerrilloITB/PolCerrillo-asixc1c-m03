@@ -10,4 +10,4 @@ for i in range(1, 6):
     #Repetició de 10 cops de la taula de multiplicar
     for n in range(1, 11):
         resultat = i * n
-        print(i, "x", n, "=", resultat)
+        print(i, "·", n, "=", resultat)
