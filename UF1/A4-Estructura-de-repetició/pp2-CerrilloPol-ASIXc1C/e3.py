@@ -14,6 +14,7 @@ try:
         print(end="")
     # Posar que es repetixi y vegades, i printi les vegades adequades
         for y in range(8):
+            #TODO fer que printi la linea sencera i la columna sencera
             if fil == x and col == y:
                 print(ast, end=" ")
             elif (x + y) % 2 == 0:
