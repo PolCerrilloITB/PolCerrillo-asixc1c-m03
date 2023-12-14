@@ -5,7 +5,7 @@ ASIXc1C M03 UF1
 Descripció: Galetes == Persones?
 """
 
-persones, galetes = (input().split(" "))
+persones, galetes = input().split(" ")
 npersona = int(persones)
 ngaletes = int(galetes)
 if ngaletes % npersona == 0:
