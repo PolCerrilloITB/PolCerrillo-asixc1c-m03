@@ -29,4 +29,4 @@ try:
     else:
         print("No es palindrom.")
 except:
-    print("Una paraula")
+    print("Error")
