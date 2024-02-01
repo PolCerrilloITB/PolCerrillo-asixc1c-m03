@@ -8,6 +8,7 @@ Per encriptar la frase, ha de fer servir el valor numeric de cada lletra. CaldrÃ
 poder indentificar a on comenÃ§a i acaba cada lletra.
 """
 paraula = input("Donem una frase: ")
+#Posem una regla per la longitud maxima que ahuria de tenir una frase normal
 if len(paraula) > 3:
     for i in paraula:
         if i != paraula[-1]:
@@ -15,4 +16,4 @@ if len(paraula) > 3:
         else:
             print(ord(i))
 else:
-        print("Una frase no un/a lletra/numero/caracter")
+    print("Una frase no un/a lletra/numero/caracter")
