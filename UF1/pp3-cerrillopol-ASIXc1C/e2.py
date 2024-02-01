@@ -12,6 +12,7 @@ paraula = input("Donem una frase: ")
 if len(paraula) > 3:
     for i in paraula:
         if i != paraula[-1]:
+            #Separacio entra paraules encriptades
             print(ord(i), end=".")
         else:
             print(ord(i))
