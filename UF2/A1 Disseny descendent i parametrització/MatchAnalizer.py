@@ -7,3 +7,7 @@ Hem de tenir en compte que en un partit de bàsquet es poden fer 1, 2 o 3 punts.
 Donat els diferents resultats analitza que està passant.
 L'usuari introduirà primer el nom dels dos equips i després el resultat actual
 """
+#TODO pedirEquipos
+#TODO pedirResultados
+#TODO analizarResultados
+#TODO mostrarGanador
