@@ -11,3 +11,9 @@ L'usuari introduirà primer el nom dels dos equips i després el resultat actual
 #TODO pedirResultados
 #TODO analizarResultados
 #TODO mostrarGanador
+def resultat(resultat1,resultat2):
+    equip1 = input()
+    equip2 = input()
+    resultat1 = []
+    resultat2 = []
+    while resultat != -1:
