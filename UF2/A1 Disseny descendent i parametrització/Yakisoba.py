@@ -1,3 +1,9 @@
+"""
+Pol Cerrillo
+6/01/2024
+ASIXc1C M03 UF1
+Descripció:
+"""
 from time import sleep
 
 
