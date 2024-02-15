@@ -12,22 +12,34 @@ L'usuari introduirà primer el nom dels dos equips i després el resultat actual
 #TODO analizarResultados
 #TODO mostrarGanador
 #region definir funcions
+equip1 = ""
+equip2 = ""
 def demanar_equips():
-    equip1 = input()
-    equip2 = input()
-    return equip1, equip2
+    nequip1 = input()
+    nequip2 = input()
+    return nequip1, nequip2
 def demanar_resultat():
-
+    resultatA =[]
+    resultatB =[]
+    try:
+            resultat = input().split
+            while resultat[0] != "-1":
+                resultatA.append(int(resultat[0]))
+                resultatB.append(int(resultat[1]))
+                resultat = input().split
+            return resultatA, resultatB
+    except:
+        print("Lletras en resultats")
+def analitzar_resultat(resultatA, resultatB):
+    for pos in range(len(resultatA)):
+        puntsA = resultatA[pos]
+        puntsB = resultatB[pos]
+        if
 def mostrar_guanyador():
-    print("Guanyar", equipo)
+    print("Guanyador",)
 #endregion
-resultat = 0
-while resultat != -1:
-    resultat = input().split()
-    if resultat[0] != "-1":
-        demanarresultat(int(resultat[0][1]))
-    else:
-        print("final del partido")
 
-equipo1,equipo2 = demanar_equips()
+nequipo1,nequipo2 = demanar_equips()
+resultatA, resultatB, = demanar_resultat()
+analitzar_resultat(resultatA, resultatB)
 mostrar_ganador()
