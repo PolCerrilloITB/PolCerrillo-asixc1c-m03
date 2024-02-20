@@ -29,23 +29,23 @@ def columnes():
     while True:
         com = input().split()
         if len(com) == 2 and com[0] in comandas:
+            if com[0] == 'halt':
+                print("El programa s'aturara")
+                exit(0)
             return com[0], com[1]
-        elif com[0] == 'halt':
-            print("El programa s'aturara")
-            exit(0)
         else:
             print("Comanda", com, "no valida")
-def mostrar_ayuda(com):
-    print("Ayuda de ", com)
-def mostrar_versio(com):
-    print("Versió de ", com)
+def mostrar_ayuda(comanda):
+    print("Ayuda de ", comanda)
+def mostrar_versio(comanda):
+    print("Versió de ", comanda)
 def main():
     while True:
-        comandas, opcions = columnes()
-        if comandas == "halt":
+        comanda, opcio = columnes()
+        if comanda == "halt":
             break
         if opcions in ['-h', '--help']:
-            mostrar_ayuda(com)
+            mostrar_ayuda(comanda)
         else:
-            mostrar_versio(com)
+            mostrar_versio(comanda)
 main()
