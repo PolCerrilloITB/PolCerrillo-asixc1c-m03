@@ -18,4 +18,4 @@ def readIntListFromKeyboard():
         else:
            numbers.append(int(numero))
    except:
-       print("Un numero sense decimals, ni paraules")
+       print("No hi han numeros enters")
