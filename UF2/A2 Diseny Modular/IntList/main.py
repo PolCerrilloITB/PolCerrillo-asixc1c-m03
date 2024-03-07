@@ -10,7 +10,5 @@ Per provar la funció, fes un programa, al mòdul main.py, que llegeixi una llis
 '''
 import kernel
 def main():
-    print("Enters processats:", numbers)
-    num = numbers()
-    readIntListFromKeyboard(num)
+    print(kernel.readIntListFromKeyboard())
 main()

@@ -10,8 +10,12 @@ Per provar la funció, fes un programa, al mòdul main.py, que llegeixi una llis
 '''
 def readIntListFromKeyboard():
    numbers=[]
-   num = input().split()
-   numbers = list((int, num.split()))
-   if -1 in numbers:
-       numbers = numbers[:numbers.index(-1)]
-   return numbers
+   try:
+       num = input().split()
+       for numero in num:
+        if numero == "-1":
+            return numbers
+        else:
+           numbers.append(int(numero))
+   except:
+       print("Un numero sense decimals, ni paraules")
