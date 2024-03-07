@@ -8,3 +8,9 @@ def readIntListFromKeyboard():
    return numbers
 Per provar la funció, fes un programa, al mòdul main.py, que llegeixi una llista d'enters i la imprimeixi per pantalla.
 '''
+import kernel
+def main():
+    print("Enters processats:", numbers)
+    num = numbers()
+    readIntListFromKeyboard(num)
+main()

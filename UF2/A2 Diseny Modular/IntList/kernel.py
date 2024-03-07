@@ -8,3 +8,10 @@ def readIntListFromKeyboard():
    return numbers
 Per provar la funció, fes un programa, al mòdul main.py, que llegeixi una llista d'enters i la imprimeixi per pantalla.
 '''
+def readIntListFromKeyboard():
+   numbers=[]
+   num = input().split()
+   numbers = list((int, num.split()))
+   if -1 in numbers:
+       numbers = numbers[:numbers.index(-1)]
+   return numbers
