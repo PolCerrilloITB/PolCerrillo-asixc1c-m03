@@ -13,9 +13,10 @@ def readIntListFromKeyboard():
    try:
        num = input().split()
        for numero in num:
-        if numero == "-1":
-            return numbers
-        else:
-           numbers.append(int(numero))
+            if numero == "-1":
+                return numbers
+            else:
+                numbers.append(int(numero))
+       return "La llista no s'ha finalitzat"
    except:
        print("No hi han numeros enters")
