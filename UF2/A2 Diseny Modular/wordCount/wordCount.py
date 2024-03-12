@@ -1,5 +1,8 @@
 '''
-Introduction
+Pol Cerrillo
+12/03/2024
+ASIXc1C M03 UF2
+Descripció: Introduction
 You teach English as a foreign language to high school students.
 You've decided to base your entire curriculum on TV shows.
 You need to analyze which words are used, and how often they're repeated.
