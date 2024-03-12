@@ -19,7 +19,7 @@ def comprobar_rectangle(matriu):
         if not colors[1].isdigit() or not colors[2].isdigit():
             print("No son numeros enters")
             return False
-        rectangles(matriu)
+    rectangles(matriu)
 
 def rectangles(matriu):
     for rectangle in matriu:
