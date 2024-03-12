@@ -1,3 +1,14 @@
+'''
+Pol Cerrillo
+12/03/2024
+ASIXc1C M03 UF2
+Descripció: Volem fer un programa que dibuixi rectangles de colors a la consola.
+Per exemple, si volem que dibuixi els següents 3 rectangles.
+color: RED, llargada: 4, amplada: 5
+color: BLUE, llargada: 2, amplada: 2
+color: GREEN, llargada: 3, amplada: 5
+L'entrada de dades acabarà amb un ";Q"
+'''
 import systemColors
 vermell = systemColors.CRED
 verd = systemColors.CGREEN
