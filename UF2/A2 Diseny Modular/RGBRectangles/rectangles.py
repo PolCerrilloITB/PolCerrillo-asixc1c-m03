@@ -8,19 +8,30 @@ def dades():
     while colors != ';Q':
         matriu.append(colors)
         colors = input()
-    rectangles(matriu)
+    comprobar_rectangle(matriu)
 
-def rectangles(matriu):
+def comprobar_rectangle(matriu):
     for colors in matriu:
         colors = colors.lower().split()
-        llargada = int(colors[1])
-        amplada = int(colors[2])
-        color = colors[0]
-        if color == 'Red':
+        if colors[0] != "vermell" and colors[0] != "verd" and colors[0] != "blau":
+            print("color desconegut")
+            return False
+        if not colors[1].isdigit() or not colors[2].isdigit():
+            print("No son numeros enters")
+            return False
+        rectangles(matriu)
+
+def rectangles(matriu):
+    for rectangle in matriu:
+        rectangle = rectangle.lower().split()
+        color = rectangle[0]
+        llargada = int(rectangle[1])
+        amplada = int(rectangle[2])
+        if color == 'vermell':
             color = vermell
-        elif color == 'Green':
+        elif color == 'verd':
             color = verd
-        elif color == 'Blue':
+        elif color == 'blau':
             color = blau
         for i in range(llargada):
             for x in range(amplada):
