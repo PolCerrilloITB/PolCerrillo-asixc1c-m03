@@ -33,7 +33,7 @@ EXTRA BONUS: Do the same, adding letters and punctuation marks. English alphabet
 def demanar_numeros():
     num = int(input())
     return num
-def printar_numeros():
+def printar_numeros(num):
     numeros = {
         "0": ["  #####  ", " #     # ", "#       #", "#       #", "#       #", " #     # ", "  #####  "],
         "1": ["    #    ", "   ##    ", "  # #    ", "    #    ", "    #    ", "    #    ", "  #####  "],
