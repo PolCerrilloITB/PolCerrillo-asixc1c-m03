@@ -31,8 +31,8 @@ Output
 EXTRA BONUS: Do the same, adding letters and punctuation marks. English alphabet only.
 '''
 def demanar_numeros():
-    num = int(input())
-    return num
+    num = input()
+    printar_numeros(num)
 def printar_numeros(num):
     numeros = {
         "0": ["  #####  ", " #     # ", "#       #", "#       #", "#       #", " #     # ", "  #####  "],
@@ -122,5 +122,5 @@ def printar_numeros(num):
     for x in range(7):
         linea = ""
         for numeros in num:
-            linea += numeros[numeros][x]+ " "
+            linea += numeros[numeros][x] + " "
         print(linea)
