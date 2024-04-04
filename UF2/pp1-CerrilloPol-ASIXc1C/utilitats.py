@@ -82,25 +82,28 @@ def utilitat3():
     else:
         print("Login Out")
 def utilitat4():
-    VOCAL = ["a", "e", "i", "o", "u"]
-    CONSONANT = ["b", "c", "d", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "z", "x"]
-    CONSONANT = systemColors.CBLACK
-    VOCAL = systemColors.CBLUE
-    dades = ""
-    while dades[:] != "\q" and dades != 3:
-        dades = dades.lower()
-        dades = re.sub(r'[^\w\s]', '', dades)
-        dades = dades.split()
-        paraules = {}
-        #TODO canviar las lletres a colors
-        for paraula in dades:
-            #TODO acabar de fer el canvi i canviar el codi de sota
-            if paraula in VOCAL:
-                VOCAL[paraula] += 1
-            else:
-                CONSONANT[paraula] = 1
-        for paraula in paraules:
-            print(paraula)
+    try:
+        VOCAL = ["a", "e", "i", "o", "u"]
+        CONSONANT = ["b", "c", "d", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "z", "x"]
+        CONSONANT = systemColors.CBLACK
+        VOCAL = systemColors.CBLUE
+        dades = ""
+        while dades[:] != "\q" and dades != 3:
+            dades = dades.lower()
+            dades = re.sub(r'[^\w\s]', '', dades)
+            dades = dades.split()
+            paraules = {}
+            #TODO canviar las lletres a colors
+            for paraula in dades:
+                #TODO acabar de fer el canvi i canviar el codi de sota
+                if paraula in VOCAL:
+                    VOCAL[paraula] += 1
+                else:
+                    CONSONANT[paraula] = 1
+            for paraula in paraules:
+                print(paraula)
+    except:
+        print("En Proces")
 
 def utilitat5():
     utilitat1()
