@@ -9,7 +9,7 @@ sortida hauran d'estar tancats X    X  o també per uns '👁' '👁'
 def fitxerDrac():
     contingut = ''
     f = open('Dragon.in', mode='rt', encoding='utf-8')
-    changelinia = f.readline(8)
+    changelinia = f.readline()
     contingut += changelinia
     while changelinia != '':
         changelinia = f.readline()
