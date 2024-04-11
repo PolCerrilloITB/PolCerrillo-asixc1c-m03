@@ -6,3 +6,21 @@ Descripció:Llegir el fitxer Dragon.in i crear el fitxer de sortida DragonEyesCl
 Però caldrà haver canviar prèviament els ulls del drac que al fitxer d'entrada estan oberts 0    0 , i al de
 sortida hauran d'estar tancats X    X  o també per uns '👁' '👁'
 '''
+def fitxerDrac():
+    contingut = ''
+    f = open('Dragon.in', mode='rt', encoding='utf-8')
+    changelinia = f.readline(8)
+    contingut += changelinia
+    while changelinia != '':
+        changelinia = f.readline()
+        contingut += changelinia
+    f.close()
+    return contingut
+def canvideulls(contingut):
+    x = open('DragonEyesClosed.out', mode='w', encoding='utf-8')
+    for changelinia in contingut:
+        if '0' in changelinia:
+            x.write(changelinia.replace('0', 'X'))
+        else:
+            x.write(changelinia)
+    x.close()
