@@ -16,7 +16,7 @@ def fitxerDrac():
         contingut += changelinia
     f.close()
     return contingut
-def canvideulls(contingut):
+def canviulls(contingut):
     x = open('DragonEyesClosed.out', mode='w', encoding='utf-8')
     for changelinia in contingut:
         if '0' in changelinia:

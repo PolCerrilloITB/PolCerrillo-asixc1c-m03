@@ -9,3 +9,6 @@ sortida hauran d'estar tancats X    X  o també per uns '👁' '👁'
 import closeDragonEyes
 
 def main():
+    contingut = closeDragonEyes.fitxerDrac()
+    closeDragonEyes.canviulls(contingut)
+main()
