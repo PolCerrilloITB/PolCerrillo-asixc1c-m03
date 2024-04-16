@@ -19,8 +19,14 @@ def llegirFitxer():
         print("Ruta incorrecta o no trobada")
 def calculdenotes(notes):
     notes = notes.split()
-    notes = [int(notes) for nota in notes]
+    notes = [int(nota) for nota in notes]
     minima = min(notes)
     maxima = max(notes)
     mitjana = sum(notes)/len(notes)
-    return mitjana, maxima, minima
+    return minima, maxima, mitjana
+def main():
+    notes = llegirFitxer()
+    minima, maxima, mitjana = calculdenotes(notes)
+    print(f"Minima: {round(minima, 2)}")
+    print(f"Maxima: {round(maxima, 2)}")
+    print(f"Mitjana: {round(mitjana, 2)}")

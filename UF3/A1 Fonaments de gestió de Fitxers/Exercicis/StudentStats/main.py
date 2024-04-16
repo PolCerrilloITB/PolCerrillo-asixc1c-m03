@@ -8,12 +8,5 @@ Les notes provenen d'un fitxer la ruta del qual serà introduïda per teclat.
 Per tant, la quantitat de notes és indeterminada, i dependrà del contingut de cada fitxer que es faci servir.
 Fes un petit programa que li solucioni la tasca (les notes de l'examen no tenen decimals).
 '''
-import s
-def main():
-    notes = llegirFitxer()
-    minima, maxima, mitjana = calculdenotes(notes)
-    print(f"Minima: {minma}")
-    print(f"Maxima: {maxima}")
-    print(f"Mitjana: {mitjana}")
-    students.stats()
-main()
+import studentsStats
+studentsStats.main()
