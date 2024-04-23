@@ -27,7 +27,6 @@ def quantityDistrict(beachAndDistrict):
 def main():
     beachAndDistrict = get_beaches_data()
     district_to_quantity = quantityDistrict(beachAndDistrict)
-    print(beachAndDistrict)
     print(district_to_quantity)
     for district, quantity in district_to_quantity.items():
         print(f"El distrito {district} tiene {quantity} playas.")
