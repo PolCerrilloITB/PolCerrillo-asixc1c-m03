@@ -13,11 +13,11 @@ Pista:  Que macos són els PANDAS !!
 import pandas as pd
 def llegir_cdv():
     df = pd.read_csv('2023_03_Marc_BicingNou_INFORMACIO.csv').drop_duplicates()
-    df = df.drop_duplicates(subset=["station_id"])
     return df
 def calcular_capacitat(df):
     capacitat_maxima = df.loc[df['capacity'].idxmax()]
     capacitat_minima = df.loc[df['capacity'].idxmin()]
+    df = df.drop_duplicates(subset=["station_id"])
     capacitat_total = df['capacity'].sum()
     return capacitat_maxima, capacitat_minima, capacitat_total
 def main():
