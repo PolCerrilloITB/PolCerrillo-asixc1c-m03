@@ -1,3 +1,22 @@
+'''
+Volem fer un marcador per un partit de squash a partir de la història d'esdeveniments del partit
+continguda a un fitxer de text.
+Encara que hi ha diferents formes de puntuar, una de les més utilitzades pels jugadors amateurs és jugar al
+millor de cinc sets, és a dir, el jugador que abans guanyi tres sets guanya el partit i acaba el joc.
+Els sets es juguen a 9 punts:
+Cal guanyar amb un avantatge de com a mínim dos punts. Si s'arriba a un empat a 8, guanyarà el que arribi a 10.
+Si s'empata a 9, es jugarà a 11, etc…
+Els punts només pugen al marcador si el que guanya el punt tenia el servei. És a dir, es fa servir el que es coneix
+com a "recuperació del servei". Si el jugador A saca i guanya el punt, aquest puja al seu marcador.
+Però si el punt el guanya B, atès que no ha sacat ell, recupera el servei però no puntua.
+El jugador que guanya un set comença sacant en el següent.
+Ens demanen esbrinar el marcador final de cada un dels sets d'un partit d'esquaix coneixent els
+guanyadors de tots els punts. És possible que el partit no acabi a causa que el lloguer
+de la pista arriba a la seva fi: és a dir, la història del partit continguda al fitxer no té per què resultar
+en un guanyador. En aquest cas es presentarà el resultat parcial.
+L'usuari primer introduirà la ruta al fitxer amb la història del partit.
+De cada partit, escriurà qui guanya cada punt i finalitzarà amb una F.
+'''
 class Scoreboard:
     def __init__(self):
         self.player_a_score = 0
