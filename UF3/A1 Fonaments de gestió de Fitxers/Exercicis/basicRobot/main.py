@@ -34,7 +34,7 @@ class Robot:
 def main():
     try:
         robot = Robot()
-        file_path = input("Enter the path to the file with the orders: ")
+        file_path = input("Introduce el archivo: ")
         with open(file_path, 'r') as f:
             for line in f:
                 action = line.strip()
