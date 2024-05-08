@@ -1,3 +1,21 @@
+'''
+Fes un programa que permeti moure un robot en un pla 2D a partir de les instruccions contingudes a un fitxer de text.
+El robot ha de guardar la seva posició (X, Y) i la velocitat actual. Per defecte, la posició serà
+(0, 0) i la velocitat és 1. La velocitat indica la distància que recorre el robot en cada acció.
+El robot té les següents accions:
+DALT: El robot es mou cap a dalt (tenint en compte la velocitat).
+BAIX: El robot es mou cap a baix (tenint en compte la velocitat).
+DRETA: El robot es mou cap a la dreta (tenint en compte la velocitat).
+ESQUERRA: El robot es mou cap a l'esquerra (tenint en compte la velocitat).
+ACCELERAR: El robot augmenta en 0.5 la velocitat. La velocitat màxima és 10.
+DISMINUIR: El robot augmenta en 0.5 la velocitat. La velocitat mínima és 0.
+POSICIO: El robot imprimeix la seva posició.
+VELOCITAT: El robot imprimeix la seva velocitat.
+El programa acaba quan llegeix del fitxer l'acció END.
+Exemple
+Les línies que comencen per > són les que el programa ha llegit del fitxer. Com és habitual,
+el programa demanarà a l'usuari la ruta al fitxer que conté les ordres.
+'''
 class Robot:
     def __init__(self):
         self.position = (0, 0)
