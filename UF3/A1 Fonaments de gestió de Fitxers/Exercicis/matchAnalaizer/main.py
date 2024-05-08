@@ -1,3 +1,9 @@
+'''
+Volem fer un programa que analitzi els resultats d'un partit de bàsquet.
+Hem de tenir en compte que en un partit de bàsquet es poden fer 1, 2 o 3 punts.
+Donat els diferents resultats analitza que està passant.
+L'usuari introduirà la ruta al fitxer, el qual tindrà la següent estructura:
+'''
 def read_file(file_path):
     with open(file_path, 'r') as f:
         teams = f.readline().strip().split()
