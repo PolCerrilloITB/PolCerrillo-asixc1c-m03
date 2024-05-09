@@ -12,6 +12,7 @@ FILE = 'paraules.txt'
 DIR_PARAULES = os.path.join(".", "paraules")
 
 def llegir_fitxer():
+    #Lectura del fitxer
     try:
         with open(FILE, 'r', encoding='utf-8') as f:
             linies = f.readlines()
