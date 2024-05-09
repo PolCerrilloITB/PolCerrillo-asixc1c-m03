@@ -14,6 +14,7 @@ TIC = ['c']
 TICA = ['a']
 CIO = ['ó']
 DIR_PARAULES = os.path.join(".", "paraules")
+#Lectura de les linieas
 def llegir_paraules(frase):
     fraseSplit = frase.split()
     frase_final = ""
