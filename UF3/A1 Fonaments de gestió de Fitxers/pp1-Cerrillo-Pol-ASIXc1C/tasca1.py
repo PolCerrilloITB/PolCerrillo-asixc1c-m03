@@ -56,6 +56,7 @@ def llegir_paraules(frase):
         else:
             frase_final = " "
     return frase_final, frase
+# Funció per procesar apóstros i guions a les paraules.
 def apostrofe_guion(palabra):
     if "'" in palabra or "-" in palabra:
         if "'" in palabra:
