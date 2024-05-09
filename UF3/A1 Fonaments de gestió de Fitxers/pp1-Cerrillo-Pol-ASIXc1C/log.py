@@ -1,3 +1,10 @@
+'''
+Pol Cerrillo
+09/05/2023
+ASIXc1C M03 UF3
+Descripció:Crear un programa per processar el fitxer de text anomenat paraules.txt per dur
+a terme les tasques que es detallen més endavant.
+'''
 import logging
 import os
 
